@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sooso" >
+
+    <TextView
+        android:id="@+id/item_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Item Name:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_Name"
+        android:layout_below="@+id/item_Name"
+         />
+
+        <TextView
+            android:id="@+id/item_Keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_Name"
+            android:layout_below="@+id/itemName"
+            android:layout_marginTop="15dp"
+            android:text="Item Keyword:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemKeyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_Keyword"
+            android:layout_below="@+id/item_Keyword"
+            
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/item_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemKeyword"
+            android:layout_below="@+id/itemKeyword"
+            android:layout_marginTop="30dp"
+            android:text="Item Price:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_Price"
+            android:layout_below="@+id/item_Price"
+             />
+
+        <CheckBox
+            android:id="@+id/checkDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemPrice"
+            android:layout_below="@+id/itemPrice"
+            android:layout_marginTop="35dp"
+            android:text="Reduced Product" />
+
+        <TextView
+            android:id="@+id/itemDiscountno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkDiscount"
+            android:layout_alignTop="@+id/checkDiscount"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/checkDiscount"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Discountno"
+            android:layout_alignTop="@+id/Discountno"
+            android:layout_toRightOf="@+id/Discountno"
+            android:text="@string/percentage"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        
+
+        <ImageButton
+            android:id="@+id/ItemPic"
+            android:layout_width="95dip"
+            android:layout_height="95dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/item_Name"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/photobg1" />
+    
+
+</RelativeLayout>

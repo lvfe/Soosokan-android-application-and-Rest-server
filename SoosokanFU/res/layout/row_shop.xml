@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/mm_listitem"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/shop_logo"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/shop_logo" />
+
+    <TextView
+        android:id="@+id/row_shopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shop_logo"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/shop_logo"
+        android:text="Shop name:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/row_ShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shop_logo"
+        android:layout_alignBottom="@+id/row_shopname"
+        android:layout_toRightOf="@+id/row_shopname"
+        android:text="Shop Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignBottom="@+id/shop_logo"
+        android:layout_alignParentRight="true"
+        android:text="Distance: 100 m"
+         />
+    
+</RelativeLayout>
